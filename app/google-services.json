@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "164705811318",
+    "firebase_url": "https://appchat-8a7b8.firebaseio.com",
+    "project_id": "appchat-8a7b8",
+    "storage_bucket": "appchat-8a7b8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:164705811318:android:ac537f46e4a24428149857",
+        "android_client_info": {
+          "package_name": "com.example.masseging"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "164705811318-sf32hdfn2ml07v58266pufe1ctmurui0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXfGqPXOB28QPXrCrmsQFlfKx1vMvHwbA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "164705811318-sf32hdfn2ml07v58266pufe1ctmurui0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

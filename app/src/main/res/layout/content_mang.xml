@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/students"
+        android:layout_width="414dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/employees"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="136dp"
+                android:contentDescription="@string/student"
+                app:srcCompat="@drawable/students" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/student"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                app:fontFamily="serif" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/employees"
+        android:layout_width="414dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/rides"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/students">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="128dp"
+                android:contentDescription="@string/student"
+                app:srcCompat="@drawable/teamwork" />
+
+            <TextView
+                android:id="@+id/employeeMangment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/emplyees"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                app:fontFamily="serif" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/rides"
+        android:layout_width="414dp"
+        android:layout_height="183dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/employees">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="146dp"
+                android:contentDescription="@string/rides"
+                app:srcCompat="@drawable/bus" />
+
+            <TextView
+                android:id="@+id/ridesMangment"
+                android:layout_width="match_parent"
+                android:layout_height="34dp"
+                android:text="@string/rides2"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="28sp"
+                app:fontFamily="serif" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
