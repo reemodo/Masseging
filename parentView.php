@@ -6,7 +6,7 @@ $connection = new mysqli("localhost", "root", "","SchoolBus"); // Establishing C
 }// Selecting Database
 //MySQL Query to read data
 $heroes = array(); 
-$qur = "SELECT `Message` FROM `Messages` WHERE 1";
+$qur = "SELECT Parent_id,Father_name FROM `parents` ";
 //creating an statment with the query
 $stmt = $connection->prepare($qur);
  
@@ -14,15 +14,15 @@ $stmt = $connection->prepare($qur);
 $stmt->execute();
  
 //binding results for that statment 
-$stmt->bind_result($Message);
+$stmt->bind_result($Parent_id, $Father_name);
  
 //looping through all the records
- while($stmt->fetch()){
+while($stmt->fetch()){
 	
 	//pushing fetched data in an array 
 	$temp = [
-	
-		'masg'=>$Message
+		'id'=>$Parent_id,
+		'name'=>$Father_name
 	];
 	
 	//pushing the array inside the hero array 
@@ -31,9 +31,5 @@ $stmt->bind_result($Message);
  
 //displaying the data in json format 
 echo json_encode($heroes);
-
-    mysqli_close($connection);
-	
-
 ?>
 
